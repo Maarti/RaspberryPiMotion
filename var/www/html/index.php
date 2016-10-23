@@ -15,8 +15,11 @@
 	</style>
 </head>
 <body>
-	<h1>Dates</h1>
+	<h1>Livecam</h1>
+	<img src="http://livecam.maarti.net/" alt="Livecam">
+	<br/>
 	<hr/>
+	<h1>Archives</h1>
 	<div>
 	<ul>
 	<?php
