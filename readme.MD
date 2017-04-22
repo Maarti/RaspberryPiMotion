@@ -1,4 +1,9 @@
-#Usefull commands
+# RaspberryPi Motion Detection
+This is the configuration of my Raspberry Pi that is running a [Motion](http://www.lavrsen.dk/foswiki/bin/view/Motion/WebHome) daemon, PhP and an Apache Server.
+Motion record videos when a motion is detected (from the Raspberry Pi camera), then i have cron jobs that merge and speed up videos, and put it in the Apache server.
+
+# Memo
+## Usefull commands
     #Check if motion is running (and alert/error)
     sudo service motion status -l
     
@@ -8,7 +13,7 @@
     #Reboot raspberry
     sudo shutdown -r now
 
-#Installing Apache
+## Installing Apache
     #Update
     sudo apt-get update
     sudo apt-get upgrade
@@ -24,7 +29,7 @@
     wget -O verif_apache.html http://127.0.0.1
     cat ./verif_apache.html
 
-#Installing PHP
+## Installing PHP
     #Install PHP
     sudo aptitude install php5
     
