@@ -13,6 +13,24 @@ Motion record videos when a motion is detected (from the Raspberry Pi camera), t
     #Reboot raspberry
     sudo shutdown -r now
 
+## Installing Motion
+    #Update
+    sudo apt-get update
+    sudo apt-get upgrade
+    
+    #Install motion
+    sudo apt-get install motion
+    
+    #Recognize RaspberryPi Camera V2
+    sudo modprobe bcm2835-v4l2
+    echo "bcm2835-v4l2" | sudo tee -a /etc/modules
+
+    #Config motion
+    # Change the start_motion_daemon to yes in /etc/default/motion
+    # Edit the config file :
+    sudo nano /etc/motion/motion.conf
+    # or see mine
+
 ## Installing Apache
     #Update
     sudo apt-get update
@@ -38,3 +56,8 @@ Motion record videos when a motion is detected (from the Raspberry Pi camera), t
     
     #Test if it works
     echo "<?php phpinfo(); ?>" > /var/www/html/index.php
+
+# Links
+[Installing motion on Raspberry](https://raspbian-france.fr/video-surveillance-raspberry-pi-camera/)
+[Installing web server](https://raspbian-france.fr/installer-serveur-web-raspberry/)
+
