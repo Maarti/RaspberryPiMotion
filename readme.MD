@@ -58,6 +58,8 @@ Motion record videos when a motion is detected (from the Raspberry Pi camera), t
     echo "<?php phpinfo(); ?>" > /var/www/html/index.php
 
 # Links
+* [Motion](http://www.lavrsen.dk/foswiki/bin/view/Motion/WebHome)
+* [Motion Config File Options](http://www.lavrsen.dk/foswiki/bin/view/Motion/ConfigFileOptions)
 * [Installing motion on Raspberry](https://raspbian-france.fr/video-surveillance-raspberry-pi-camera/)
 * [Installing web server](https://raspbian-france.fr/installer-serveur-web-raspberry/)
 
