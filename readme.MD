@@ -71,7 +71,7 @@ Motion record videos when a motion is detected (from the Raspberry Pi camera), t
 
     #Edit apache config
     sudo nano /etc/apache2/apache2.conf
-    Find the <Directory> block for the /var/www directory that holds the document root. Turn on .htaccess processing by changing the AllowOverride directive within that block from "None" to "All":
+    # Find the <Directory> block for the /var/www directory that holds the document root. Turn on .htaccess processing by changing the AllowOverride directive within that block from "None" to "All":
     <Directory /var/www/>
         Options Indexes FollowSymLinks
         AllowOverride All
