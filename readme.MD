@@ -9,6 +9,9 @@ Motion record videos when a motion is detected (from the Raspberry Pi camera), t
     
     #Edit Motion config file
     sudo nano /etc/motion/motion.conf
+
+    #Edit crontab
+    sudo crontab -e
     
     #Reboot raspberry
     sudo shutdown -r now
