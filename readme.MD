@@ -86,6 +86,22 @@ Motion record videos when a motion is detected (from the Raspberry Pi camera), t
     AuthUserFile /etc/apache2/.htpasswd
     Require valid-user
 
+## Installing [ffmpeg](https://wiki.debian.org/ffmpeg#Installation)
+    #Add repository
+    nano /etc/apt/sources.list
+    # Add :
+        # Backports repository
+        deb http://httpredir.debian.org/debian jessie-backports main contrib non-free
+    
+    #Update
+    sudo aptitude update
+    
+    #Install
+    sudo aptitude -t jessie-backports install ffmpeg
+
+## Installing Imagemagick (convert)
+    sudo apt-get install imagemagick
+
 
 # Links
 * [Motion](http://www.lavrsen.dk/foswiki/bin/view/Motion/WebHome)
