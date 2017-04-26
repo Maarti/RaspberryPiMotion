@@ -5,18 +5,19 @@ Motion record videos when a motion is detected (from the Raspberry Pi camera), t
 
 # Memo
 ## Usefull commands
-    #Check if motion is running (and alert/error)
-    sudo service motion status -l
-    
-    #Edit Motion config file
-    sudo nano /etc/motion/motion.conf
+```shell
+#Check if motion is running (and alert/error)
+sudo service motion status -l
 
-    #Edit crontab
-    sudo crontab -e
-    
-    #Reboot raspberry
-    sudo shutdown -r now
+#Edit Motion config file
+sudo nano /etc/motion/motion.conf
 
+#Edit crontab
+sudo crontab -e
+
+#Reboot raspberry
+sudo shutdown -r now
+```
 ## Installing Motion
     #Update
     sudo apt-get update
